@@ -88,12 +88,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# set editor
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -124,6 +120,10 @@ export PATH="$PATH:/Users/max/.yarn/bin"
 
 export DOTNET_ROOT=/usr/local/share/dotnet
 export PATH="$PATH:/usr/local/share/omnisharp"
+
+export PATH="$PATH:/Users/max/.tmuxifier/bin"
+
+export PATH="$PATH:/Users/max/go/bin"
 
 # PyTorch Setup
 export PYTORCH_ENABLE_MPS_FALLBACK=1

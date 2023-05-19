@@ -103,6 +103,9 @@ return packer.startup(function(use)
 	-- LaTeX plugin
 	use("lervag/vimtex")
 
+	-- Git integration
+	use("tpope/vim-fugitive")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

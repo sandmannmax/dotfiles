@@ -22,6 +22,7 @@ mason_lspconfig.setup({
 		"volar",
 		"csharp_ls",
 		"gopls",
+		"clangd",
 	},
 })
 
@@ -33,6 +34,7 @@ mason_null_ls.setup({
 		"csharpier", -- c# formatter
 		"eslint_d", -- ts/js linter
 		"gofmt", -- golang formatter
+		"clang_format", -- cpp formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

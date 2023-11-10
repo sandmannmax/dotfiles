@@ -23,6 +23,9 @@ mason_lspconfig.setup({
 		"csharp_ls",
 		"gopls",
 		"clangd",
+		"tailwindcss",
+		"bufls",
+		"cssls",
 	},
 })
 
@@ -35,6 +38,7 @@ mason_null_ls.setup({
 		"eslint_d", -- ts/js linter
 		"gofmt", -- golang formatter
 		"clang_format", -- cpp formatter
+		"buf", -- protobuf formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

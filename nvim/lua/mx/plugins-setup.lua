@@ -111,6 +111,9 @@ return packer.startup(function(use)
 	use("aklt/plantuml-syntax")
 	use("weirongxu/plantuml-previewer.vim")
 
+	-- Golang
+	use("fatih/vim-go")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

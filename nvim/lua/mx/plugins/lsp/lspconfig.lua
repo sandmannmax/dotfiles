@@ -79,6 +79,8 @@ lspconfig["clangd"].setup({
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	filetypes = { "html", "templ" },
+	init_options = { userLanguages = { templ = "html" } },
 })
 
 lspconfig["bufls"].setup({
@@ -89,4 +91,28 @@ lspconfig["bufls"].setup({
 lspconfig["cssls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+})
+
+lspconfig["cmake"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["templ"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "templ" },
+})
+vim.filetype.add({ extension = { templ = "templ" } })
+
+lspconfig["html"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "html", "templ" },
+})
+
+lspconfig["htmx"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "html", "templ" },
 })

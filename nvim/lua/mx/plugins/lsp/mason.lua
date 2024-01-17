@@ -26,6 +26,10 @@ mason_lspconfig.setup({
 		"tailwindcss",
 		"bufls",
 		"cssls",
+		"cmake",
+		"templ",
+		"html",
+		"htmx",
 	},
 })
 

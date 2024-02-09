@@ -30,6 +30,7 @@ mason_lspconfig.setup({
 		"templ",
 		"html",
 		"htmx",
+		"ltex",
 	},
 })
 

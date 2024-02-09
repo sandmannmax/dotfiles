@@ -116,3 +116,13 @@ lspconfig["htmx"].setup({
 	on_attach = on_attach,
 	filetypes = { "html", "templ" },
 })
+
+lspconfig["ltex"].setup({
+	capabilities = capabilities,
+	settings = {
+		ltex = {
+			language = "de-DE",
+		},
+	},
+	on_attach = on_attach,
+})

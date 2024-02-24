@@ -31,6 +31,7 @@ mason_lspconfig.setup({
 		"html",
 		"htmx",
 		"ltex",
+		"rust_analyzer",
 	},
 })
 

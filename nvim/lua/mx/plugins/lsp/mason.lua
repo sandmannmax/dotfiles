@@ -32,6 +32,7 @@ mason_lspconfig.setup({
 		"htmx",
 		"ltex",
 		"rust_analyzer",
+		"zls",
 	},
 })
 

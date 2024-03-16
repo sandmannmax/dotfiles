@@ -125,6 +125,7 @@ lspconfig["ltex"].setup({
 		},
 	},
 	on_attach = on_attach,
+	filetypes = { "tex", "md" },
 })
 
 lspconfig["rust_analyzer"].setup({

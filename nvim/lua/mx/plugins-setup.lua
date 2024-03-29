@@ -114,6 +114,9 @@ return packer.startup(function(use)
 	-- Golang
 	use("fatih/vim-go")
 
+	-- vim-apm
+	use("theprimeagen/vim-apm")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

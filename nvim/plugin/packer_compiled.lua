@@ -226,6 +226,11 @@ _G.packer_plugins = {
     path = "/Users/max/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-apm"] = {
+    loaded = true,
+    path = "/Users/max/.local/share/nvim/site/pack/packer/start/vim-apm",
+    url = "https://github.com/theprimeagen/vim-apm"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/max/.local/share/nvim/site/pack/packer/start/vim-fugitive",

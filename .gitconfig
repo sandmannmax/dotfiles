@@ -3,3 +3,5 @@
 # Bitte passen Sie die folgenden Zeilen an und kommentieren Sie diese aus:
 	name = sandmannmax
 	email = sandmannmaxxer@gmail.com
+[init]
+	defaultBranch = main

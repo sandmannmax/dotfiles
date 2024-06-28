@@ -117,6 +117,9 @@ return packer.startup(function(use)
 	-- vim-apm
 	use("theprimeagen/vim-apm")
 
+	-- xbase
+	use("xbase-lab/xbase")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

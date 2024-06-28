@@ -75,6 +75,10 @@ lspconfig["gopls"].setup({
 lspconfig["clangd"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	cmd = {
+		"clangd",
+		"--offset-encoding=utf-16",
+	},
 })
 
 lspconfig["tailwindcss"].setup({
@@ -135,6 +139,11 @@ lspconfig["rust_analyzer"].setup({
 })
 
 lspconfig["zls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["sourcekit"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })

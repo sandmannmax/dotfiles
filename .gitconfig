@@ -5,3 +5,7 @@
 	email = sandmannmaxxer@gmail.com
 [init]
 	defaultBranch = main
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "ssh://git@git.mxsandmann.com:222/"]
+	insteadOf = https://git.mxsandmann.com/

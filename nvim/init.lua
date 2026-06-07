@@ -493,6 +493,13 @@ require('lazy').setup({
     },
   },
   {
+    'GustavEikaas/easy-dotnet.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope.nvim' },
+    config = function()
+      require('easy-dotnet').setup()
+    end,
+  },
+  {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -710,7 +717,13 @@ require('lazy').setup({
         --
         -- omnisharp = {},
 
-        roslyn = {},
+        -- roslyn = {
+        -- on_attach = function(client, bufnr)
+        --   if vim.bo[bufnr].filetype == 'razor' then
+        --     client.server_capabilities.documentHighlightProvider = false
+        --   end
+        -- end,
+        -- },
 
         lua_ls = {
           -- cmd = { ... },
@@ -762,15 +775,6 @@ require('lazy').setup({
         },
       }
     end,
-  },
-
-  {
-    'seblyng/roslyn.nvim',
-    ---@module 'roslyn.config'
-    ---@type RoslynNvimConfig
-    opts = {
-      -- your configuration comes here; leave empty for default settings
-    },
   },
 
   { -- Autoformat
@@ -981,7 +985,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'c_sharp' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'c_sharp', 'clojure' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
@@ -1021,7 +1025,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!

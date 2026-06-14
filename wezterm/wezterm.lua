@@ -18,6 +18,7 @@ config.keys = {
 	{ key = "j", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Up") },
 	{ key = "l", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Right") },
+	{ key = "m", mods = "LEADER", action = wezterm.action.TogglePaneZoomState },
 	{ key = "x", mods = "LEADER", action = wezterm.action.CloseCurrentPane({ confirm = true }) },
 	-- Tab keybindings
 	{ key = "c", mods = "LEADER", action = wezterm.action.SpawnTab("CurrentPaneDomain") },

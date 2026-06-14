@@ -4,6 +4,7 @@ end
 
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/go/bin
+fish_add_path ~/.dotnet/tools
 alias v=nvim
 
 function fish_greeting

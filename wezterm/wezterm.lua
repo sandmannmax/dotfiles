@@ -6,7 +6,11 @@ local config = wezterm.config_builder()
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 12
 config.color_scheme = "tokyonight_night"
-config.window_decorations = "RESIZE"
+-- config.window_decorations = "RESIZE"
+
+-- Umlaute
+config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = true
 
 -- Keys
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
